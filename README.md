@@ -55,12 +55,11 @@ The challenge was to automate the triage process by developing a machine learnin
 
 ## 💡 Dataset Overview
 
-We will be utilizing two datasets, __train__ and __test__, for our analysis. Both datasets contain over 9.5 million rows of data, and data preprocessing will be applied to both to ensure consistency and accuracy in the model's performance.
+We will be utilizing two datasets, __train__ and __test__, for our analysis. Both datasets contain over 9.5 million rows of data, and data preprocessing was applied to both datasets to ensure consistency and accuracy in the model's performance.
 
 You can download the dataset from the following link:
 
 [Download Dataset](https://drive.google.com/drive/folders/18vt2lkf69MggXitrTSn9qnZ8s-ToeKcH)
-
 
 The dataset is structured into three hierarchies:
 
@@ -74,7 +73,7 @@ The dataset was split into **70% training data** and **30% test data**.
 
 ## 📊 Metrics
 
-Predicting the triage grade of cybersecurity incidents is a __classification problem__. Therefore, the following metrics that are essential for classification problems are taken into account. Below are the __metrics__ used in the process of classifying cybersecurity incidents:
+We are predicting the triage grade of cybersecurity incidents. Therefore, the following __metrics__ that we used for classification are :
 
 - [__Accuracy__](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html): Measures the overall correctness of the predictions.
 
@@ -115,9 +114,8 @@ The solution developed in this project can be applied to various business scenar
 
 ### b. Exploratory Data Analysis (EDA) 
 - **Objective**: Discover patterns, relationships, and anomalies in the data.
-- **Steps**:
+
   - We have generated visualizations,  to understand data distributions and relationships.
-  - Compute statistical summaries to quantify feature distributions.
 
  **i) Class Distribution**
 
@@ -162,7 +160,7 @@ The solution developed in this project can be applied to various business scenar
 ## 2. Data Preprocessing 
 
 ### a. Handling Missing Data 
-- **Objective**: Address missing values to prepare the dataset for modeling.
+- **Objective**: Missing values are addressed to prepare the dataset for modeling.
 
   - Identified missing values using functions like `.isnull()` in pandas.
   - For each columns with missing data we have used the following methods:
