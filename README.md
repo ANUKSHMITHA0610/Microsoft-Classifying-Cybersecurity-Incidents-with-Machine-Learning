@@ -43,9 +43,7 @@ This project encompasses the entire machine learning pipeline, from Data Preproc
 
 2. **Model Development**: Building a classification model using various machine learning techniques. Initial models will be developed as baselines, and advanced models like Random Forests and XGBoost will be used for optimization.
 
-3. **Addressing Imbalanced Data**: Implementing methods like **SMOTE** or **class weight adjustments** to handle imbalanced datasets effectively.
-
-4. **Evaluation & Interpretation**: Evaluating the model's performance using metrics such as **Macro-F1 score**, **Confusion Matrix**, **Precision** & **Recall**. Additionally, model interpretation techniques like SHAP values will be used to determine the importance of features.
+3. **Evaluation & Interpretation**: Evaluating the model's performance using metrics such as **Macro-F1 score**, **Confusion Matrix**, **Precision** & **Recall**. Additionally, model interpretation techniques like SHAP values will be used to determine the importance of features.
 
 ---
 
@@ -72,7 +70,7 @@ The **GUIDE** dataset is structured into three hierarchies:
 2. **Alert Level**: Consolidation of evidence to signify potential security incidents.
 3. **Incident Level**: Comprehensive security breach narratives representing a cohesive threat scenario.
 
-The dataset includes **45 features** and over **1 million incidents** with triage annotations (**TP, BP, FP**). It is divided into **70% training data** and **30% test data**.
+The dataset includes **45 features** and over **9.5 million incidents** with triage annotations (**TP, BP, FP**). It is divided into **70% training data** and **30% test data**.
 
 ---
 
@@ -80,12 +78,15 @@ The dataset includes **45 features** and over **1 million incidents** with triag
 
 Predicting the triage grade of cybersecurity incidents is a __classification problem__. Therefore, the following metrics that are essential for classification problems are taken into account. Below are the __metrics__ used in the process of classifying cybersecurity incidents:
 
+- [__Accuracy__](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html):
+
 - [__Macro-F1 Score__](https://towardsdatascience.com/micro-macro-weighted-averages-of-f1-score-clearly-explained-b603420b292f): This metric provides a balanced measure of performance across all classes by averaging the F1 scores of each class, treating all classes equally.
 
 - [__Precision__](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#precision-score): This metric measures the accuracy of the positive predictions made by the model, focusing on how many of the predicted positives are actually true positives.
 
 - [__Recall__](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html#recall-score): This metric assesses the model's ability to identify all relevant instances (true positives), focusing on how many of the actual positives were correctly predicted.
 
+[__Confusion Matrix__](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html):
 
 ---
 
@@ -190,7 +191,6 @@ The solution developed in this project can be applied to various business scenar
 - **Steps**:
   - **Combine Features**: Merge related features (e.g., combining `year` and `month` into a `date` feature).
   - **Derive New Features**: Extract new information from existing features (e.g., converting timestamps into hour of the day or day of the week).
-  - **Normalization**: Scale numerical features to a common range (e.g., using Min-Max scaling or Z-score normalization).
 
 ### c. Encoding Categorical Variables 
 - **Objective**: Convert categorical features into a numerical format suitable for modeling.
@@ -208,12 +208,6 @@ The solution developed in this project can be applied to various business scenar
     - **Training Set**: Used for training the model.
     - **Validation Set**: Used for tuning and evaluating model performance.
   - Common splits include 70-30 or 80-20, but this can vary based on the dataset size.
-
-### b. Stratification 
-- **Objective**: Ensure that both training and validation sets have similar class distributions.
-- **Steps**:
-  - If the target variable is imbalanced, use stratified sampling to maintain proportional class distribution in both sets.
-  - This helps in avoiding bias in the model evaluation process.
 
 ## 4. Model Selection and Training 
 
