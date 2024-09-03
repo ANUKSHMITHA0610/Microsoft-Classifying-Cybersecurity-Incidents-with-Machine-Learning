@@ -37,7 +37,7 @@ In this project, we aim to assist Security Operations Centers (SOCs) by building
 
 ## 🎯 Project Scope
 
-This project encompasses the entire machine learning pipeline, from Data Preprocessing to Evaluation. The main components of the scope include:
+Our project encompasses the entire machine learning pipeline, from Data Preprocessing to Evaluation. The main components of the scope include:
 
 1. **Data Exploration & Preprocessing**: Conducting exploratory data analysis (EDA) to understand patterns and trends in the dataset. This includes handling missing data, feature engineering, and transforming categorical variables.
 
@@ -89,7 +89,7 @@ We are predicting the triage grade of cybersecurity incidents. Therefore, the fo
 
  ## 🛡️Business Use Cases
 
-The solution developed in this project can be applied to various business scenarios in cybersecurity:
+The solution developed in our project can be applied to various business scenarios in cybersecurity:
 
 - **Security Operation Centers (SOCs)**: Automate the triage process by accurately classifying incidents, allowing SOC analysts to prioritize and respond to critical threats more efficiently.
 
