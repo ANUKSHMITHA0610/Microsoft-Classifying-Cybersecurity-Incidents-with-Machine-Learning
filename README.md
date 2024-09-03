@@ -164,9 +164,9 @@ The solution developed in our project can be applied to various business scenari
 
   - Identified missing values using functions like `.isnull()` in pandas.
   - For each columns with missing data we have used the following methods:
-    - **Imputation**: Replace missing values with mean, median, or mode.
-    - **Removal**: Drop rows or columns with missing values if they are not critical.
-    - **Model-based**: Use algorithms that can handle missing values directly, if applicable.
+    - **Imputation**: Replaced missing values with mean, median, and mode.
+    - **Removal**: Dropped rows and columns with missing values .
+    - **Model-based**: Used algorithms that can handle missing values directly.
 
 ### b. Feature Engineering 
 - **Objective**: We have enhance the dataset by modifying the features to improve model performance.
@@ -191,18 +191,8 @@ The solution developed in our project can be applied to various business scenari
 
 ## 4. Model Selection and Training 
 
-### a. Baseline Model 
-- **Objective**: Establish a performance benchmark with a simple model.
-
-  - Start with basic models like:
-    - **Logistic Regression**: For binary classification problems.
-    - **Decision Tree**: For a simple tree-based approach.
-  - Evaluate the baseline model's performance to understand the initial effectiveness and complexity needed.
-
-### b. Advanced Models 
+### a. Advanced Models 
 - **Objective**: Explored more sophisticated models to improve performance.
-
-1. **Experiment with Advanced Models**
 
    - **Random Forests**:
      
@@ -223,10 +213,10 @@ The solution developed in our project can be applied to various business scenari
 ### c. Cross-Validation 
 - **Objective**: To validate model performance across different data subsets.
 
-  - We have implement k-fold cross-validation:
+  - We have implemented k-fold cross-validation:
     - Divided the data into k subsets (folds).
     - Trained and evaluated the model k times, each time used a different fold as the validation set and the remaining as training data.
-  - This reduces the risk of overfitting and provides a more reliable estimate of model performance.
+  - This has reduced the risk of overfitting and provided a more reliable estimate of model performance.
 
 ## 5. Model Evaluation and Tuning 
 
@@ -234,8 +224,8 @@ The solution developed in our project can be applied to various business scenari
 - **Objective**: To assess model performance using relevant metrics.
 
   - Evaluate using the validation set:
-    - **Accuracy**: Measures the overall correctness of the predictions.  
-    - **Macro-F1 Score**: Measures balance between precision and recall across classes.
+    - **Accuracy**: Measured the overall correctness of the predictions.  
+    - **Macro-F1 Score**: Measured the balance between precision and recall across classes.
     - **Precision**: Accuracy of positive predictions.
     - **Recall**: Ability to identify all positive instances.
     - **Confusion Matrix**: Visual representation of model performance across classes.
@@ -267,7 +257,29 @@ ii) __Feature Importances (XGBoost Classifier)__
   <img width="700" alt="Image" src="https://github.com/user-attachments/assets/a03d3ce6-6c16-475a-8e31-9736d08890fb">
 </p>
 
-## 8. Recommendations
+## 7. Final Evaluation on Test Set 
+
+### a. Testing 
+- **Objective**: Evaluated the finalized model on unseen data.
+
+  - Tested the model using the `test.csv` dataset.
+  - Reported final performance metrics: accuracy,macro-F1 score, precision,recall , confusion matrix.
+
+---
+
+## 🔍 Model Comparison 
+
+|  **Model**  | **Accuracy** |  **Macro-F1 Score**  | **Macro-Precision** | **Macro-Recall** |
+|:-----------:|:------------:|:-------------------:|:-------------------:|:----------------:|
+| [**1. Random Forest Classifier**](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) | 0.498 | 0.347 | 0.679| 0.411 |
+| [**2. Tuned XGBoost Classifier**](https://xgboost.readthedocs.io/en/stable/) | 0.621 | 0.571 | 0.694 | 0.563 |
+
+
+The XGBoost Classifier performs better across all metrics compared to the Random Forest Classifier. It has higher accuracy, Macro-F1 Score, Macro-Precision, and Macro-Recall, making it the superior model based on the provided data.
+
+---
+
+## 📚 Recommendations
 
 ### a) Integration into SOC Workflows
 
@@ -290,31 +302,7 @@ ii) __Feature Importances (XGBoost Classifier)__
 - **Operationalization:** Establish a deployment pipeline with testing and validation.
 - **Training:** Provide SOC analyst training and support.
 - **Maintenance:** Set up ongoing evaluation and maintenance for model performance.
-
-## 7. Final Evaluation on Test Set 
-
-### a. Testing 
-- **Objective**: Evaluated the finalized model on unseen data.
-
-  - Tested the model using the `test.csv` dataset.
-  - Reported final performance metrics: accuracy,macro-F1 score, precision,recall , confusion matrix.
-
-### b. Comparison to Baseline 
-- **Objective**: Verify model improvement and consistency.
-
-  - Compare performance on the test set with the baseline model and validation results.
-  - Ensure that the final model shows consistent improvement and meets project objectives.
-
-## 🔍 Model Comparison 
-
-|  **Model**  | **Accuracy** |  **Macro-F1 Score**  | **Macro-Precision** | **Macro-Recall** |
-|:-----------:|:------------:|:-------------------:|:-------------------:|:----------------:|
-| [**1. Random Forest Classifier**](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) | 0.498 | 0.347 | 0.679| 0.411 |
-| [**2. Tuned XGBoost Classifier**](https://xgboost.readthedocs.io/en/stable/) | 0.621 | 0.571 | 0.694 | 0.563 |
-
-
-The XGBoost Classifier performs better across all metrics compared to the Random Forest Classifier. It has higher accuracy, Macro-F1 Score, Macro-Precision, and Macro-Recall, making it the superior model based on the provided data.
-
+  
 ---
 
 ## 🏆 Results
