@@ -251,11 +251,10 @@ The solution developed in our project can be applied to various business scenari
 
 ## 6. Model Interpretation 
 
-### a. Feature Importance 
-- **Objective**: Understanding the contribution of each feature to the model's predictions.
+**Feature Importance**: Understanding the contribution of each feature to the model's predictions.
 
   - Analyzed the feature importance using:
-    - **Model-Specific Methods**: We have used feature importance scores provided by models like Random Forest.
+    - **Model-Specific Methods**: We have used feature importance scores provided by models like Random Forest and XGBoost.
     
 i) __Feature Importances (Random Forest Classifier)__
 
@@ -271,8 +270,7 @@ ii) __Feature Importances (XGBoost Classifier)__
 
 ## 7. Final Evaluation on Test Set 
 
-### a. Testing 
-- **Objective**: Evaluated the finalized model on unseen data.
+ **Testing**: Evaluated the finalized model on unseen data.
 
   - Tested the model using the `test.csv` dataset.
   - Reported final performance metrics: accuracy,macro-F1 score, precision,recall , confusion matrix.
