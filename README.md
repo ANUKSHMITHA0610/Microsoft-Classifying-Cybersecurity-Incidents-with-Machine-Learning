@@ -295,10 +295,10 @@ ii) __Feature Importances (XGBoost Classifier)__
 
 Here, the **hyperparameter-tuned Decision Tree model** shows a slight improvement across all metrics compared to the model before tuning:
 
-- **Accuracy** increased from 0.8074 to 0.8083.
-- **Macro-Precision** improved from 0.7969 to 0.7981.
-- **Macro-Recall** increased from 0.7867 to 0.7877.
-- **Macro-F1 Score** improved from 0.7909 to 0.7920.
+- **Accuracy** increased from 0.807 to 0.808.
+- **Macro-Precision** improved from 0.796 to 0.798.
+- **Macro-Recall** increased from 0.786 to 0.787.
+- **Macro-F1 Score** improved from 0.790 to 0.791.
 
 Given these results, the hyperparameter-tuned model provids the best accuracy and overall performance.
 
