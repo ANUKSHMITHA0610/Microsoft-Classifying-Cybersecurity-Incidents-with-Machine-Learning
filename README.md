@@ -209,7 +209,7 @@ The objective of this section is to build and evaluate different machine learnin
       <p align="center">
 
 ### b. Advanced Models
-- **Objective**: To improve performance by leveraging ensemble methods and gradient boosting algorithms that can capture complex patterns in the data, improve predictive accuracy, and reduce overfitting. These models build upon the insights gained from baseline models, offering more robust solutions for incident classification.
+- **Objective**: To explore and apply ensemble methods and gradient boosting algorithms with the aim of capturing more complex patterns, improving predictive accuracy, and reducing overfitting. While these models are designed to build upon the insights from the baseline models and generally offer more robust solutions for incident classification, in this project, their performance did not exceed that of the **Decision Tree** baseline model.
 
     - **i) Random Forests**: Random Forests were selected as a natural progression from Decision Trees. This ensemble method constructs multiple decision trees during training, and the final prediction is made by averaging the predictions (regression) or by majority voting (classification). Random Forests are powerful in reducing variance and improving generalization, making them well-suited for complex datasets. However, after evaluation, Random Forest did not outperform the tuned Decision Tree model in this context.
 
