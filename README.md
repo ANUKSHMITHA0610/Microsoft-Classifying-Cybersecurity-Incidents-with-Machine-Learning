@@ -215,9 +215,7 @@ The solution developed in our project can be applied to various business scenari
   <img width="700" alt="Image" src="https://github.com/user-attachments/assets/946bd8b2-87e1-46a1-ad79-1046cc151c8b">
 </p>
 
-   - **ii) Gradient Boosting Machines (e.g., XGBoost, LightGBM)**:
-     
-     - **Description**: A boosting algorithm that build models sequentially. Each new model attempts to correct errors made by the previous ones, resulting in a strong predictive model. XGBoost (Extreme Gradient Boosting) and LightGBM (Light Gradient Boosting Machine) are popular implementations that improve upon traditional boosting methods with enhanced speed and accuracy.
+   - **ii) Gradient Boosting Machines (e.g., XGBoost, LightGBM)**: A boosting algorithm that build models sequentially. Each new model attempts to correct errors made by the previous ones, resulting in a strong predictive model. XGBoost (Extreme Gradient Boosting) and LightGBM (Light Gradient Boosting Machine) are popular implementations that improve upon traditional boosting methods with enhanced speed and accuracy.
        
 <p align="center">
   <img width="700" alt="Image" src="https://github.com/user-attachments/assets/b629c2be-b9dd-4d77-b156-ea84652c2366">
