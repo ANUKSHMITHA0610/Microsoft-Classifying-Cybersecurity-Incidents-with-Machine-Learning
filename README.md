@@ -193,13 +193,13 @@ The solution developed in our project can be applied to various business scenari
 
 ### a. Baseline Models
 
-    - **i) Logistic Regression**: Chosen for its simplicity and effectiveness in binary classification tasks. It provides a good starting point to understand the relationship between the features and the target variable.
+   - **i) Logistic Regression**: Chosen for its simplicity and effectiveness in binary classification tasks. It provides a good starting point to understand the relationship between the features and the target variable.
 
       <p align="center">
         <img width="700" alt="image" src="https://github.com/user-attachments/assets/2788ab95-703c-4ec4-84aa-58a46cfd1474">
       </p>
 
-    - **ii) Decision Tree**: Selected as an alternative baseline model, offering interpretability and the ability to capture non-linear relationships in the data.
+   - **ii) Decision Tree**: Selected as an alternative baseline model, offering interpretability and the ability to capture non-linear relationships in the data.
 
 <p align="center">
   <img width="700" alt="image" src="https://github.com/user-attachments/assets/9f581f26-995b-4e57-86bc-c8268ab64fc3">
@@ -207,13 +207,13 @@ The solution developed in our project can be applied to various business scenari
 
 ### b. Advanced Models
 
-    - **i) Random Forests**: An ensemble learning method that constructs a multitude of decision trees during training. The final prediction is made by averaging the predictions of individual trees (for regression) or by majority voting (for classification).
+   - **i) Random Forests**: An ensemble learning method that constructs a multitude of decision trees during training. The final prediction is made by averaging the predictions of individual trees (for regression) or by majority voting (for classification).
    
       <p align="center">
         <img width="700" alt="Image" src="https://github.com/user-attachments/assets/946bd8b2-87e1-46a1-ad79-1046cc151c8b">
       </p>
        
-    - **ii) Gradient Boosting Machines (e.g., XGBoost, LightGBM)**: A boosting algorithm that builds models sequentially. Each new model attempts to correct errors made by the previous ones, resulting in a strong predictive model. XGBoost (Extreme Gradient Boosting) and LightGBM (Light Gradient Boosting Machine) are popular implementations that improve upon traditional boosting methods with enhanced speed and accuracy.
+  - **ii) Gradient Boosting Machines (e.g., XGBoost, LightGBM)**: A boosting algorithm that builds models sequentially. Each new model attempts to correct errors made by the previous ones, resulting in a strong predictive model. XGBoost (Extreme Gradient Boosting) and LightGBM (Light Gradient Boosting Machine) are popular implementations that improve upon traditional boosting methods with enhanced speed and accuracy.
        
 <p align="center">
   <img width="700" alt="Image" src="https://github.com/user-attachments/assets/b629c2be-b9dd-4d77-b156-ea84652c2366">
