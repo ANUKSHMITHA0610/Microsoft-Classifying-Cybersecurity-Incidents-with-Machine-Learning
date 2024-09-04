@@ -283,13 +283,14 @@ ii) __Feature Importances (XGBoost Classifier)__
 
 ## 🔍 Model Comparison 
 
-|  **Model**                                                                                          | **Accuracy** | **Macro-F1 Score** | **Macro-Precision** | **Macro-Recall** |
-|:---------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:-------------------:|:----------------:|
-| [**1. Random Forest Classifier**](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)  | 0.498        | 0.347              | 0.679               | 0.411            |
-| [**2. XGBoost Classifier**](https://xgboost.readthedocs.io/en/stable/)                              | 0.621        | 0.571              | 0.694               | 0.563            |
-| [**3. Logistic Regression**](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)        | 0.433        | 0.239              | 0.272               | 0.352            |
+| **Model**                                                                                                                | **Accuracy** | **Macro-F1 Score** | **Macro-Precision** | **Macro-Recall** |
+|:-------------------------------------------------------------------------------------------------------------------------:|:------------:|:------------------:|:-------------------:|:----------------:|
+| [**1. Random Forest Classifier**](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) | 0.498        | 0.347              | 0.679               | 0.411            |
+| [**2. XGBoost Classifier**](https://xgboost.readthedocs.io/en/stable/)                                                    | 0.621        | 0.571              | 0.694               | 0.563            |
+| [**3. Logistic Regression**](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) | 0.433        | 0.239              | 0.272               | 0.352            |
 | [**4. Decision Tree Classifier (Before Hyperparameter Tuning)**](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html) | 0.807        | 0.790              | 0.797               | 0.786            |
 | [**5. Decision Tree Classifier (After Hyperparameter Tuning)**](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)  | __0.808__    | __0.791__          | __0.798__           | __0.787__        |
+
 
 
 
